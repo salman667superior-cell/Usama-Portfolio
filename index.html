@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usama - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Flex:opsz,wght@6..144,1..1000&family=Pinyon+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Canvas Background replacing static grid -->
+    <canvas id="bg-canvas"></canvas>
+
+    <!-- Glowing Background Spheres -->
+    <div class="glow-spot glow-1"></div>
+    <div class="glow-spot glow-2"></div>
+
+    <nav>
+        <div class="nav-logo">USAMA.</div>
+        <ul class="nav-links">
+            <li>
+                <a href="#home">
+                    <span class="nav-text">HOME</span>
+                    <i class="fa-solid fa-house nav-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#about">
+                    <span class="nav-text">ABOUT</span>
+                    <i class="fa-solid fa-circle-user nav-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#services">
+                    <span class="nav-text">SERVICES</span>
+                    <i class="fa-solid fa-cubes nav-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#portfolio">
+                    <span class="nav-text">WORK</span>
+                    <i class="fa-solid fa-folder-open nav-icon"></i>
+                </a>
+            </li>
+            <li>
+                <a href="#contact">
+                    <span class="nav-text">CONTACT</span>
+                    <i class="fa-solid fa-envelope nav-icon"></i>
+                </a>
+            </li>
+        </ul>
+    </nav>
+
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <span class="badge">Graphic Designer & Creative Director</span>
+            <h1>Hi, I'm <br><span>USAMA </span>MUGHAL</h1>
+            <p>Combining realistic aesthetics with modern UI graphics, typography, and premium design workflows.</p>
+            <div class="btn-group">
+                <a href="#portfolio" class="btn btn-gold">Explore Work</a>
+                <a href="#services" class="btn btn-outline">My Services</a>
+            </div>
+        </div>
+        <div class="hero-img-container">
+            <img src="Usama4.png" alt="Usama Profile">
+        </div>
+    </section>
+
+    <!-- Updated Detailed About Section (Without Buttons) -->
+    <section id="about">
+        <div class="section-header">
+            <h2>ABOUT <span>ME</span></h2>
+            <p class="about-subtitle">Crafting high-impact visuals with a mix of aesthetic perfection, modern UI design,
+                and creative mastery.</p>
+        </div>
+
+        <div class="about-container">
+            <!-- Left Side: Main Bio & Key Capabilities -->
+            <div class="glass-card about-bio-card">
+                <h3>Creative Director & Visual Designer</h3>
+                <p>
+                    Visual quality aur realistic perfection meri top priority hai. Main modern digital design
+                    suites—misaal ke taur par corporate logos, modern banner art, high-resolution visual retouching, aur
+                    user interface design—ko premium standards ke sath execute karta hoon.
+                </p>
+                <p style="margin-top: 15px;">
+                    Mera focus modern aesthetic trendings, clean layout structures, aur high-converting visual assets
+                    create karne par rehta hai taakay aapka brand market mein standout kar sakay.
+                </p>
+
+                <!-- Core Expertise Tags -->
+                <div class="about-skills-tags">
+                    <span class="skill-tag"><i class="fa-solid fa-check"></i> Graphic Suite</span>
+                    <span class="skill-tag"><i class="fa-solid fa-check"></i> Brand Identity</span>
+                    <span class="skill-tag"><i class="fa-solid fa-check"></i> AI Art & Upscaling</span>
+                    <span class="skill-tag"><i class="fa-solid fa-check"></i> UI/UX Layouts</span>
+                    <span class="skill-tag"><i class="fa-solid fa-check"></i> Video Editing</span>
+                </div>
+            </div>
+
+            <!-- Right Side: Stats & Highlights Grid -->
+            <div class="about-stats-grid">
+                <div class="glass-card stat-card">
+                    <i class="fa-solid fa-award stat-icon"></i>
+                    <h4>3+ Years</h4>
+                    <p>Design Experience</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <i class="fa-solid fa-diagram-project stat-icon"></i>
+                    <h4>150+</h4>
+                    <p>Projects Completed</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <i class="fa-solid fa-face-smile stat-icon"></i>
+                    <h4>100%</h4>
+                    <p>Client Satisfaction</p>
+                </div>
+                <div class="glass-card stat-card">
+                    <i class="fa-solid fa-wand-magic-sparkles stat-icon"></i>
+                    <h4>Ultra High</h4>
+                    <p>Quality Renderings</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Creative Services Section with Auto Image Links -->
+    <section id="services">
+        <div class="section-header">
+            <h2>CREATIVE <span>SERVICES</span></h2>
+            <p class="services-subtitle">High-impact creative solutions tailored for modern visual identity and growth.
+            </p>
+        </div>
+        <div class="cards-grid">
+
+            <!-- Graphic Designer -->
+            <div class="glass-card service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1572044162444-ad60f128bdea?q=80&w=800&auto=format&fit=crop"
+                        alt="Graphic Designer" class="service-graphic-img">
+                </div>
+                <h3>Graphic Designer</h3>
+                <p>Creative and professional graphic designer specializing in eye-catching designs, branding, social
+                    media posts, thumbnails, and marketing materials.</p>
+            </div>
+
+            <!-- Video Editor -->
+            <div class="glass-card service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=800&auto=format&fit=crop"
+                        alt="Video Editor" class="service-graphic-img">
+                </div>
+                <h3>Video Editor</h3>
+                <p>Professional video editor skilled in creating engaging, high-quality videos with smooth transitions,
+                    effects, captions, and storytelling that keeps viewers engaged.</p>
+            </div>
+
+            <!-- TikTok & YouTube Automation -->
+            <div class="glass-card service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://img-c.udemycdn.com/course/480x270/5688600_bce7_8.jpg"
+                        alt="TikTok & YouTube Automation" class="service-graphic-img">
+                </div>
+                <h3>TikTok & YouTube Automation</h3>
+                <p>We create and manage engaging TikTok and YouTube content, including research, scripting, editing,
+                    uploading, and optimization to grow your audience.</p>
+            </div>
+
+            <!-- Social Media Manager -->
+            <div class="glass-card service-card">
+                <div class="service-img-wrapper">
+                    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=800&auto=format&fit=crop"
+                        alt="Social Media Manager" class="service-graphic-img">
+                </div>
+                <h3>Social Media Manager</h3>
+                <p>Professional social media management focused on content planning, posting, audience engagement, and
+                    growth across major social media platforms.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="portfolio">
+        <div class="section-header">
+            <h2>Selected <span>Projects</span></h2>
+        </div>
+
+        <!-- Category Tabs -->
+        <div class="portfolio-filter-tabs">
+            <button class="filter-btn active" data-filter="graphic">Graphic Design</button>
+            <button class="filter-btn" data-filter="video">Video Editing</button>
+        </div>
+
+        <!-- Clean Work Grid (Pure Visuals Only) -->
+        <div class="work-grid">
+            <!-- Graphic Design Items (Images Only) -->
+            <div class="work-card media-card" data-category="graphic">
+                <img src="image01.jpeg" alt="Graphic Design Project 1" class="clean-media">
+            </div>
+            <div class="work-card media-card" data-category="graphic">
+                <img src="image02.jpeg" alt="Graphic Design Project 2" class="clean-media">
+            </div>
+            <div class="work-card media-card" data-category="graphic">
+                <img src="image03.jpeg" alt="Graphic Design Project 1" class="clean-media">
+            </div>
+            <div class="work-card media-card" data-category="graphic">
+                <img src="image04.jpeg" alt="Graphic Design Project 2" class="clean-media">
+            </div>
+
+            <!-- Video Editing Items (Videos Only) -->
+            <div class="work-card media-card hide" data-category="video">
+                <video class="clean-media" controls>
+                    <source src="video1.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="work-card media-card hide" data-category="video">
+                <video class="clean-media" controls>
+                    <source src="video2.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="work-card media-card hide" data-category="video">
+                <video class="clean-media" controls>
+                    <source src="video3.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+            <div class="work-card media-card hide" data-category="video">
+                <video class="clean-media" controls>
+                    <source src="video4.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="section-header">
+            <h2>Let's <span>Connect</span></h2>
+            <p class="contact-subtitle">I'm currently open for new opportunities and collaborations. Whether you have a
+                question or just want to say hi, I'll try my best to get back to you!</p>
+        </div>
+
+        <div class="contact-container">
+            <!-- Left Side: Contact Info Links -->
+            <div class="contact-info-card glass-card">
+                <h3>Contact Information</h3>
+                <div class="info-links">
+                    <a href="https://www.facebook.com/share/1BaiZEiWdu/?mibextid=wwXIfr" target="_blank"
+                        class="info-item">
+                        <i class="fa-brands fa-facebook"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/muhammad-usama-758843287" target="_blank" class="info-item">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <span>LinkedIn Network</span>
+                    </a>
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=usamamughal23204@gmail.com&su=Inquiry&body=Hello%20there!"
+                        target="_blank" class="info-item">
+                        <i class="fa-regular fa-envelope"></i>
+                        <span>Email Me</span>
+                    </a>
+                    <a href="https://www.instagram.com/mughalzada777_" target="_blank" class="info-item">
+                        <i class="fa-brands fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Right Side: 2-Column Inputs Contact Form -->
+            <div class="contact-form-card glass-card">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Your Message</label>
+                        <textarea id="message" name="message" rows="4" placeholder="Hello, I'd like to talk about..."
+                            required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">
+                        Send Message <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popover Animated Modal Overlay -->
+    <div class="popover-overlay" id="successPopover">
+        <div class="popover-card">
+            <div class="popover-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. Opening WhatsApp now...</p>
+            <button type="button" class="popover-close-btn" onclick="closePopover()">Close</button>
+        </div>
+    </div>
+
+    <!-- Success Modal Popover -->
+    <div class="popover-overlay" id="successPopover">
+        <div class="popover-card">
+            <div class="popover-icon">
+                <i class="fa-solid fa-circle-check"></i>
+            </div>
+            <h3>Message Sent!</h3>
+            <p>Thank you for reaching out. I'll get back to you as soon as possible.</p>
+            <button type="button" class="popover-close-btn" onclick="closePopover()">Close</button>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Usama Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

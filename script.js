@@ -73,7 +73,7 @@ const contactForm = document.querySelector('.contact-form-card form');
 const popover = document.getElementById('successPopover');
 
 // Change this to your WhatsApp number (Country code with phone number, no '+' or spaces)
-const whatsappNumber = "923097504472";
+const whatsappNumber = "923242779181";
 
 if (contactForm) {
     contactForm.addEventListener('submit', function (e) {
